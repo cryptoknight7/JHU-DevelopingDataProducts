@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+<title>Shiny Application Description</title>
+
+
+
+
+
+<style type="text/css">
+body, td {
+   font-family: sans-serif;
+   background-color: white;
+   font-size: 13px;
+}
+
+body {
+  max-width: 800px;
+  margin: auto;
+  padding: 1em;
+  line-height: 20px;
+}
+
+tt, code, pre {
+   font-family: 'DejaVu Sans Mono', 'Droid Sans Mono', 'Lucida Console', Consolas, Monaco, monospace;
+}
+
+h1 {
+   font-size:2.2em;
+}
+
+h2 {
+   font-size:1.8em;
+}
+
+h3 {
+   font-size:1.4em;
+}
+
+h4 {
+   font-size:1.0em;
+}
+
+h5 {
+   font-size:0.9em;
+}
+
+h6 {
+   font-size:0.8em;
+}
+
+a:visited {
+   color: rgb(50%, 0%, 50%);
+}
+
+pre, img {
+  max-width: 100%;
+}
+
+pre code {
+   display: block; padding: 0.5em;
+}
+
+code {
+  font-size: 92%;
+  border: 1px solid #ccc;
+}
+
+code[class] {
+  background-color: #F8F8F8;
+}
+
+table, td, th {
+  border: none;
+}
+
+blockquote {
+   color:#666666;
+   margin:0;
+   padding-left: 1em;
+   border-left: 0.5em #EEE solid;
+}
+
+hr {
+   height: 0px;
+   border-bottom: none;
+   border-top-width: thin;
+   border-top-style: dotted;
+   border-top-color: #999999;
+}
+
+@media print {
+   * {
+      background: transparent !important;
+      color: black !important;
+      filter:none !important;
+      -ms-filter: none !important;
+   }
+
+   body {
+      font-size:12pt;
+      max-width:100%;
+   }
+
+   a, a:visited {
+      text-decoration: underline;
+   }
+
+   hr {
+      visibility: hidden;
+      page-break-before: always;
+   }
+
+   pre, blockquote {
+      padding-right: 1em;
+      page-break-inside: avoid;
+   }
+
+   tr, img {
+      page-break-inside: avoid;
+   }
+
+   img {
+      max-width: 100% !important;
+   }
+
+   @page :left {
+      margin: 15mm 20mm 15mm 10mm;
+   }
+
+   @page :right {
+      margin: 15mm 10mm 15mm 20mm;
+   }
+
+   p, h2, h3 {
+      orphans: 3; widows: 3;
+   }
+
+   h2, h3 {
+      page-break-after: avoid;
+   }
+}
+</style>
+
+
+
+</head>
+
+<body>
+<h2>Shiny Application Description</h2>
+
+<p>This Shiny application allows users to explore and plot the R &ldquo;diamonds&rdquo; data set by exploring various sample sizes, carats, types of cut, etc., and plotting the results in a multi-dimensional graph.</p>
+
+<ul>
+<li><em>This app was built on the foundation of the guide detailed at &ldquo;<a href="https://github.com/rstudio/shinyapps/blob/master/guide/guide.md">https://github.com/rstudio/shinyapps/blob/master/guide/guide.md</a>&rdquo;.</em></li>
+</ul>
+
+<hr/>
+
+<h2>App Usage</h2>
+
+<ul>
+<li><p>This application allows the users to use a slider control to <strong>choose the diamond sample size</strong> (from 1,000 to 53,940) used for plotting.</p></li>
+<li><p>Also, users may <strong>plot any data feature against any other feature</strong> on the X and Y axes using the &ldquo;X&rdquo; and &ldquo;Y&rdquo; drop-down boxes.  By default, the plot shows carats plotted against diamond cuts.</p></li>
+<li><p>In addition, users can <strong>choose to add color to the graph</strong> via the &ldquo;Color&rdquo; drop-down box, e.g., by choosing the &ldquo;price&rdquo; feature.</p></li>
+<li><p>Users can choose whether to <strong>apply &ldquo;geom_jitter&rdquo; or &ldquo;geom_smooth&rdquo; functions</strong> to the diamond data by clicking the associated checkboxes.</p></li>
+<li><p>Finally, the data may be further <strong>split into facet rows or columns</strong> based on any feature of the diamonds by selecting the feature from the &ldquo;Facet Row&rdquo; or &ldquo;Facet Column&rdquo; drop-down boxes.</p></li>
+</ul>
+
+<hr/>
+
+<h2>Summary</h2>
+
+<p>This Shiny App enables users to learn more about diamonds in a fun, interactive way, and empower them to answer the hard diamond questions like &ldquo;<em>do higher carats translate to higher prices?</em>&rdquo; and &ldquo;<em>will I pay more for premium cut diamonds?</em>&rdquo; (SPOILER ALERT: Yes and Yes).</p>
+
+<hr/>
+
+</body>
+
+</html>
