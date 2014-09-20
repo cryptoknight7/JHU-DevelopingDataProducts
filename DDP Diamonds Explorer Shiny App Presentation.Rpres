@@ -1,0 +1,54 @@
+Diamonds Explorer
+========================================================
+author: DDP Shiny App Pitch Presentation (cryptoknight7)
+date: 21 Sep 2014
+font-family: 'Helvetica'
+autosize: true
+transition: rotate
+transition-speed: slow
+
+```{r echo=FALSE}
+## Load diamond data needed by presentation.
+# The ggplot2 library contains the "diamonds" data set.
+library(ggplot2)
+
+# Load diamonds data set.
+data(diamonds)
+```
+
+Introduction
+========================================================
+The purpose of this slidify presentation is to pitch the **Diamonds Explorer** Shiny application built for the Coursera `Developing Data Products` course.
+
+Outline:
+- Show raw `diamonds` data.
+- Plot the `diamonds` data.
+- Summarize need for Shiny application.
+
+
+Raw Diamonds: Sneak Preview
+========================================================
+*This snapshot view of the raw `diamonds` data shows the fields available and a couple sample values for each entry.*
+
+``` {r}
+names(diamonds)
+
+head(diamonds,n=2)
+```
+
+
+Diamonds Plot: Multi-dimensional Data Set
+========================================================
+*This plot shows the various dimensions in the `diamonds` data set, and gives the user a sense for the many different relationships to be discovered within the data.*
+
+```{r, echo=FALSE}
+plot(diamonds)
+```
+
+
+Summary
+========================================================
+- By now, the need is surely clear for **Diamonds Explorer**, the premier solution for quickly identifying and understanding the mystifying, complex relationships between diamond carats, cuts, color, and more!
+
+     - Check out the **[Diamonds Explorer](https://cryptoknight7.shinyapps.io/DDP-ShinyApp-DiamondsExplorer/)** now!
+
